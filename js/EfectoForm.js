@@ -1,0 +1,21 @@
+$(document).ready(
+function(){
+	formCliente();
+}
+);
+function formCliente(){
+	$('#paso2').hide();
+	$('#Back').hide();
+	$('#Next').click(function(){
+		$('#paso2').show('slow');
+		$('#Back').show('slow');
+		$('#paso1').hide();
+		$('#Next').hide();
+	});
+	$('#Back').click(function(){
+		$('#paso1').show('slow');
+		$('#Next').show('slow');
+		$('#paso2').hide();
+		$('#Back').hide();
+	});
+}
